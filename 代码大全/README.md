@@ -16,11 +16,14 @@
 * [伪代码编写过程](part2/伪代码编写过程.md)
 
 
-## Part3
-* [使用变量的一般注意事项](part3/使用变量的一般注意事项.md)
-* [变量名的力量](part3/变量名的力量.md)
-* [基本数据类型](part3/基本数据类型.md)
-* [不常见的数据类型](part3/不常见的数据类型.md)
+## Part3 Variable
+* [使用变量的一般注意事项](part3_Variable/使用变量的一般注意事项.md)
+* [变量名的力量](part3_Variable/变量名的力量.md)
+* [基本数据类型](part3_Variable/基本数据类型.md)
+* [不常见的数据类型](part3_Variable/不常见的数据类型.md)
+
+
+## Part4 statements
 
 
 ## 其他

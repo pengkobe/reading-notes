@@ -23,7 +23,11 @@
 * [不常见的数据类型](part3_Variable/不常见的数据类型.md)
 
 
-## Part4 statements
+## Part4 Statements
+* [组织直线型代码](part4_statements/组织直线型代码.md)
+* [使用条件语句](part4_statements/使用条件语句.md)
+* [控制循环](part4_statements/控制循环.md)
+* [不常见的控制结构](part4_statements/不常见的控制结构.md)
 
 
 ## 其他

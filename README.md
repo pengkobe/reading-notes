@@ -12,7 +12,7 @@
 2. any time want to check (weibo || wechat || qq) 
 
 ## Reading now
-* << CODE COMPLETE 2 >>
+* << CODE COMPLETE 2 >> [notes](./代码大全/README.md)
 
 ## Reference
 [developer-reading-list by gongpeng](http://lucida.me/blog/developer-reading-list/) 

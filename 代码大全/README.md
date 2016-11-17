@@ -31,5 +31,9 @@
 * [表驱动法](part4_statements/表驱动法.md)
 
 
+## Part5 Code Improvement
+* [软件质量概述](part4_statements/软件质量概述.md)
+
+
 ## 其他
 源码/资料:http://cc2e.com/

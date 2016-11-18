@@ -32,7 +32,8 @@
 
 
 ## Part5 Code Improvement
-* [软件质量概述](part4_statements/软件质量概述.md)
+* [软件质量概述](part5_code_improvement/软件质量概述.md)  
+* [协同构建](part5_code_improvement/协同构建.md)
 
 
 ## 其他

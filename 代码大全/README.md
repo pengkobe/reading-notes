@@ -35,6 +35,7 @@
 * [软件质量概述](part5_code_improvement/软件质量概述.md)
 * [协同构建](part5_code_improvement/协同构建.md)
 * [开发者测试](part5_code_improvement/开发者测试.md)
+* [调试](part5_code_improvement/调试.md)
 
 
 ## 其他

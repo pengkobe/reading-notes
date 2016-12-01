@@ -39,7 +39,10 @@
 * [重构](part5_code_improvement/重构.md)
 
 ## part6 System Considerations
-
+* [程序规模对构建的影响](part6_system_considerations/程序规模对构建的影响.md)
+* [管理构建](part6_system_considerations/管理构建.md)
+* [集成](part6_system_considerations/集成.md)
+* [编程工具](part6_system_considerations/编程工具.md)
 
 ## 其他
 源码/资料:http://cc2e.com/

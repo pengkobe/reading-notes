@@ -1,19 +1,19 @@
 # 目录
 
-## Part1
-* [前期准备](part1/前期准备.md)
-* [个人性格](part1/个人性格.md)
-* [使用隐喻](part1/使用隐喻.md)
-* [自说明代码](part1/自说明代码.md)
-* [构建决策](part1/构建决策.md)
+## part1 Foundation
+* [前期准备](part1_foundation/前期准备.md)
+* [个人性格](part1_foundation/个人性格.md)
+* [使用隐喻](part1_foundation/使用隐喻.md)
+* [自说明代码](part1_foundation/自说明代码.md)
+* [构建决策](part1_foundation/构建决策.md)
 
 
-## Part2
-* [可以工作的类](part2/可以工作的类.md)
-* [构建中的设计](part2/构建中的设计.md)
-* [高质量子程序](part2/高质量子程序.md)
-* [防御式编程](part2/防御式编程.md)
-* [伪代码编写过程](part2/伪代码编写过程.md)
+## part2 Highquality Code
+* [可以工作的类](part2_highquality_code/可以工作的类.md)
+* [构建中的设计](part2_highquality_code/构建中的设计.md)
+* [高质量子程序](part2_highquality_code/高质量子程序.md)
+* [防御式编程](part2_highquality_code/防御式编程.md)
+* [伪代码编写过程](part2_highquality_code/伪代码编写过程.md)
 
 
 ## Part3 Variable
@@ -43,6 +43,10 @@
 * [管理构建](part6_system_considerations/管理构建.md)
 * [集成](part6_system_considerations/集成.md)
 * [编程工具](part6_system_considerations/编程工具.md)
+
+## part7 Craftsmanship
+* [布局与风格](part7_craftsmanship/布局与风格.md) 
+
 
 ## 其他
 源码/资料:http://cc2e.com/

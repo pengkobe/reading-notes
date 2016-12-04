@@ -45,7 +45,8 @@
 * [编程工具](part6_system_considerations/编程工具.md)
 
 ## part7 Craftsmanship
-* [布局与风格](part7_craftsmanship/布局与风格.md) 
+* [布局与风格](part7_craftsmanship/布局与风格.md)
+* [自说明代码](part7_craftsmanship/自说明代码.md)
 
 
 ## 其他

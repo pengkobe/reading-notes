@@ -47,7 +47,8 @@
 ## part7 Craftsmanship
 * [布局与风格](part7_craftsmanship/布局与风格.md)
 * [自说明代码](part7_craftsmanship/自说明代码.md)
-
+* [个人性格](part7_craftsmanship/个人性格.md)
+* [软件工艺的话题](part7_craftsmanship/软件工艺的话题.md)
 
 ## 其他
 源码/资料:http://cc2e.com/

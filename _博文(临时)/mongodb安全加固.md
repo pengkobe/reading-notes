@@ -6,12 +6,32 @@
 show roles
 # 获取 admin 数据库用户
 db.getUsers();
-# 关闭
+# 关闭 (也可以使用: mongod  --shutdown  --dbpath )
 use admin;
 db.shutdownServer();
+
 ```
 
+
 ## 用户/权限
+
+### 创建角色
+参考自官方手册
+
+```bash
+db.runCommand({ createRole: "userAdminAnyDatabase_blog",
+  privileges: [
+    { resource: { cluster: true }, actions: [ "addShard" ] },
+    { resource: { db: "config", collection: "" }, actions: [ "find", "update", "insert", "remove" ] },
+    { resource: { db: "users", collection: "usersCollection" }, actions: [ "update", "insert", "remove" ] },
+    { resource: { db: "", collection: "" }, actions: [ "find" ] }
+  ],
+  roles: [
+    { role: "userAdminAnyDatabase", db: "blog" }
+  ],
+  writeConcern: { w: "majority" , wtimeout: 5000 }
+})
+```
 
 ### 创建用户
 ```bash
@@ -65,4 +85,7 @@ fork=true
 # 是否禁止http接口，即28017 端口开启的服务。默认false，支持
 nohttpinterface = false
 ```
+
+### 启动
+```mongodb -f /path/to/mongodb.conf```
 

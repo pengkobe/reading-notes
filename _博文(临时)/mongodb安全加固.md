@@ -9,37 +9,19 @@ db.getUsers();
 # 关闭 (也可以使用: mongod  --shutdown  --dbpath )
 use admin;
 db.shutdownServer();
-
+# 验证
+db.auth("username","pwd")
 ```
 
 
 ## 用户/权限
 
-### 创建角色
-参考自官方手册
-
-```bash
-db.runCommand({ createRole: "userAdminAnyDatabase_blog",
-  privileges: [
-    { resource: { cluster: true }, actions: [ "addShard" ] },
-    { resource: { db: "config", collection: "" }, actions: [ "find", "update", "insert", "remove" ] },
-    { resource: { db: "users", collection: "usersCollection" }, actions: [ "update", "insert", "remove" ] },
-    { resource: { db: "", collection: "" }, actions: [ "find" ] }
-  ],
-  roles: [
-    { role: "userAdminAnyDatabase", db: "blog" }
-  ],
-  writeConcern: { w: "majority" , wtimeout: 5000 }
-})
-```
-
 ### 创建用户
 ```bash
-use admin
 db.createUser(
    {
-     user: "pengyi",
-     pwd: "Py123456Pk",
+     user: "username",
+     pwd: "pwd",
      roles: [ { role: "__system", db: "admin" } ]
    }
 )
@@ -47,11 +29,10 @@ db.createUser(
 
 ### 给用户授权
 ```
-use admin
 db.grantRolesToUser(
   "pengyi",
   [
-    { role: "userAdminAnyDatabase", db:"admin" }
+    { role: "dbOwner", db:"blog" }
   ]
 )
 ```
@@ -62,11 +43,11 @@ db.grantRolesToUser(
 
 
 ### replica set
-这算是比较高级的用法了
+这算是比较高级的用法了，入门可先不管。
 
 
 ## 将启动参数保存到配置文件中
-[mongodb@rac3 bin]$ vim /path/mongod.conf
+新建配置文件 *vim /path/to/mongod.conf* ，可按以下示例输入配置( 整理自阿里云官方示例 )
 ```
 # 端口。默认27017，MongoDB的默认服务TCP端口，监听客户端连接。要是端口设置小于1024，比如1021，则需要root权限启动，不能用mongodb帐号启动，（普通帐号即使是27017也起不来）否则报错：[mongo --port=1021 连接]
 port=27028
@@ -82,10 +63,15 @@ auth=true
 logappend=true
 # 是否后台运行，设置为true 启动 进程在后台运行的守护进程模式。默认false。
 fork=true
-# 是否禁止http接口，即28017 端口开启的服务。默认false，支持
+# 是否禁止http接口，即 28017 端口开启的服务。默认false，支持
 nohttpinterface = false
 ```
 
 ### 启动
 ```mongodb -f /path/to/mongodb.conf```
+
+
+## node with mongodb
+遇到了[链接](https://cnodejs.org/topic/52ce53c7820152a00e29d724)所述的问题，事实上*new server()*的用法已经过时，应该使用创建 MongoClient 的方式进行操作。具体用法参见:https://github.com/mongodb/node-mongodb-native
+
 

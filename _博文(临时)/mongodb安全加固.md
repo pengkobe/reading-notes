@@ -1,4 +1,4 @@
-# mongodb安全加固
+# mongodb记录
 
 ## 常用命令
 ```bash
@@ -72,6 +72,8 @@ nohttpinterface = false
 
 
 ## node with mongodb
-遇到了[链接](https://cnodejs.org/topic/52ce53c7820152a00e29d724)所述的问题，事实上*new server()*的用法已经过时，应该使用创建 MongoClient 的方式进行操作。具体用法参见:https://github.com/mongodb/node-mongodb-native
+遇到了[链接](https://cnodejs.org/topic/52ce53c7820152a00e29d724)所述的问题，
+事实上*new server()*的用法已经过时，应该使用创建 MongoClient 的方式进行操作。
+具体用法参见:https://github.com/mongodb/node-mongodb-native
 
 

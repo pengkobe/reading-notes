@@ -18,5 +18,5 @@
 * [developer-reading-list by gongpeng](http://lucida.me/blog/developer-reading-list/)   
 * [reading-list by ruanyf](https://github.com/ruanyf/reading-list) 
 
-## WhoAmI
-[yipeng.info](http://yipeng.info) since 2016-10
+## License
+MIT@[yipeng.info](http://yipeng.info) since 2016-10

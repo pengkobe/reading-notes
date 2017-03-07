@@ -6,26 +6,25 @@ Preload其实一项新的 web 标准，使得 web 开发者可以对加载细节
 ## 规范
 地址: https://w3c.github.io/preload/
 注意:
-  + preload还在修订阶段，文档还在不断变化中。
-  + 目前只有谷歌支持，
+  + preload还在修订阶段，文档不断变化中。
+  + 目前只有 Chrome/Safari 高版本支持。
 
 
 
 ## 相关概念
-1. prefetch: fetch a resource that will probably be needed
-2. subresource:  tackle the current navigation, but it failed to do that in some spectacular ways.
-   简单来说，就是想得美好，但是没做到。
+1. prefetch: 获取可能会用到的资源
+2. subresource: 针对当前页面, 但是不是很成功，简单来说，就是想得美好，但是...嘿嘿嘿
 
 
 
-## 优势
+## 特性
 * as
   + 浏览器能够正确设置资源优先级
-  + can make sure that the request is subject to the right Content-Security-Policy directives, and doesn’t go out to the server if it shouldn’t.
+  + 能够确保发出的请求符合内容安全协议,不发无用的请求。
   + 浏览器能够根据资源类型发送合适的接收请求头(Accept headers)
   + 浏览器能通过资源类型来推断是否可以重用
 * onload
-  + preload 不会阻断窗口的 onload 事件( unless the resource is also requested by a resource that blocks that event ).
+  + 不会阻断窗口的 onload 事件( 除非请求的资源里有进行阻断 ).
 
 
 
@@ -35,19 +34,21 @@ Preload其实一项新的 web 标准，使得 web 开发者可以对加载细节
 主要指藏在 Css 或 Js 中的资源,as 则可以指明资源类型，因为浏览器不知道的类型往往加载优先级较低。
 ```html
 <!--
-  as 可选类型:https://fetch.spec.whatwg.org/#concept-request-destination  
+  参见:https://fetch.spec.whatwg.org/#concept-request-destination
 -->
 <link rel="preload" href="late_discovered_thing.js" as="script">
 ```
 
 ### 加载字体
-加载字体规则异常复杂,等到真正加载的时候已经晚了。  
-注意: 即使符合同源策略，也需要加上 crossorigin
+加载字体规则异常复杂,有些重要的字体等到真正加载的时候已经晚了。
+PS: 即使符合同源策略，也需要加上 crossorigin
+
 ```html
 <link rel="preload" href="font.woff2" as="font" type="font/woff2" crossorigin>
 ```
 
 ### 只加载不执行
+一般用于加载 js 文件
 ```js
 var preload = document.createElement("link");
 link.href = "myscript.js";
@@ -75,4 +76,5 @@ document.head.appendChild(link);
 
 
 ## 参考
+这里其实就是对其进行简单的总结:
 * [preload-what-is-it-good-for](https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/]

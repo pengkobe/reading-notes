@@ -1,12 +1,12 @@
 # 性能优化之Preload
-Preload其实一项新的 web 标准，使得 web 开发者可以对加载细节做进一步控制,可以自定义加载逻辑。
+Preload 其实一项新的 web 标准，使得 web 开发者可以对加载细节做进一步控制,可以自定义加载逻辑。
 > Preload is destined for current navigation
 
 
 ## 规范
 地址: https://w3c.github.io/preload/
 注意:
-  + preload还在修订阶段，文档不断变化中。
+  + Preload 还在修订阶段，文档不断变化中。
   + 目前只有 Chrome/Safari 高版本支持。
 
 
@@ -77,4 +77,4 @@ document.head.appendChild(link);
 
 ## 参考
 这里其实就是对其进行简单的总结:
-* [preload-what-is-it-good-for](https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/]
+* [preload-what-is-it-good-for](https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/)

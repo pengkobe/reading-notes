@@ -1,6 +1,6 @@
 # 性能优化之Preload
 Preload 其实一项新的 web 标准，使得 web 开发者可以对加载细节做进一步控制,可以自定义加载逻辑。
-> Preload is destined for current navigation
+> Refers to a resource that should be loaded early in the processing of the link's context, without blocking rendering.
 
 
 ## 规范
@@ -12,8 +12,8 @@ Preload 其实一项新的 web 标准，使得 web 开发者可以对加载细�
 
 
 ## 相关概念
-1. prefetch: 获取可能会用到的资源
-2. subresource: 针对当前页面, 但是不是很成功，简单来说，就是想得美好，但是...嘿嘿嘿
+1. prefetch: 获取可能会用到的资源,游览器自身决定加载的优先级，不仅仅针对当前页面
+2. subresource: 也是针对当前页面加载, 但不是很成功，简单来说，就是想得美好，但是...嘿嘿嘿
 
 
 
@@ -41,7 +41,7 @@ Preload 其实一项新的 web 标准，使得 web 开发者可以对加载细�
 
 ### 加载字体
 加载字体规则异常复杂,有些重要的字体等到真正加载的时候已经晚了。
-PS: 即使符合同源策略，也需要加上 crossorigin
+PS: 即使符合同源策略，也需要加上 crossorigin ( 此条也适用于image )
 
 ```html
 <link rel="preload" href="font.woff2" as="font" type="font/woff2" crossorigin>
@@ -71,10 +71,11 @@ document.head.appendChild(link);
 
 
 ### 注意事项
-* 如果浏览器不支持，你得有 backup 策略
+* 如果浏览器不支持，你得有 backup 策略，因为浏览器会按照之前的加载进行处理
 * 与 http/2 相辅相成，并不是使用 http2 push 就不用使用 preload 了。
 
 
 ## 参考
 这里其实就是对其进行简单的总结:
 * [preload-what-is-it-good-for](https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/)
+* [https://w3c.github.io/preload/](https://w3c.github.io/preload/)

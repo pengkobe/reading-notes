@@ -1,5 +1,5 @@
 # Reading-notes
- to record daily reading notes.
+ > to record daily reading notes.
 
 ## Why
 * summary&think&write
@@ -12,11 +12,15 @@
 2. any time want to check (weibo || wechat || qq) 
 
 ## Reading now
-* << CODE COMPLETE 2 >> [notes](./代码大全/README.md)
+* 《CODE COMPLETE 2》 [notes](./代码大全/README.md)
 
 ## Reference
 * [developer-reading-list by gongpeng](http://lucida.me/blog/developer-reading-list/)   
 * [reading-list by ruanyf](https://github.com/ruanyf/reading-list) 
+
+## More 
+I build a issue blog to record daily FE study notes. suggestion and comments are welcomed.   
+link:https://github.com/pengkobe/reading-notes/issues
 
 ## License
 MIT@[yipeng.info](http://yipeng.info) since 2016-10

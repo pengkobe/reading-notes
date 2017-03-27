@@ -13,14 +13,15 @@
 
 ## Reading now
 * 《CODE COMPLETE 2》 [notes](./代码大全/README.md)
+* 《CODE COMPLETE 2》 [notes](./代码大全/README.md)
 
 ## Reference
-* [developer-reading-list by gongpeng](http://lucida.me/blog/developer-reading-list/)   
-* [reading-list by ruanyf](https://github.com/ruanyf/reading-list) 
+* [developer-reading-list](http://lucida.me/blog/developer-reading-list/)  by gongpeng
+* [reading-list](https://github.com/ruanyf/reading-list) by ruanyf
 
 ## More 
-I build a issue blog to record daily FE study notes. suggestion and comments are welcomed.   
-link:https://github.com/pengkobe/reading-notes/issues
+I build an issue blog to record daily FE study notes. suggestion and comments are welcomed.   
+> https://github.com/pengkobe/reading-notes/issues
 
 ## License
 MIT@[yipeng.info](http://yipeng.info) since 2016-10

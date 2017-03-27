@@ -13,7 +13,6 @@
 
 ## Reading now
 * 《CODE COMPLETE 2》 [notes](./代码大全/README.md)
-* 《CODE COMPLETE 2》 [notes](./代码大全/README.md)
 
 ## Reference
 * [developer-reading-list](http://lucida.me/blog/developer-reading-list/)  by gongpeng
